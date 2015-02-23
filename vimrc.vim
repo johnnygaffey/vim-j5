@@ -87,7 +87,6 @@ autocmd BufReadPost *
 """"""""""""""
 set foldmethod=indent
 set foldlevel=999
-set foldmethod=syntax
 
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
