@@ -81,7 +81,6 @@ autocmd BufReadPost *
 "Code Folding"
 """"""""""""""
 set foldlevel=999
-set foldmethod=syntax
 
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
