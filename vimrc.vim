@@ -8,7 +8,7 @@ set et
 set sw=4                         " shift width is four
 set softtabstop=4                " four here. 
 set expandtab                    " all tabs are actually spaces
-set smartindent
+set smartindent                  " FOR NOW....
 
 
 " ----------------------------------------------------------------------------
@@ -46,13 +46,8 @@ set showmatch                    " brackets/brace matching
 set incsearch                    " show me whats matching as I type my search
 set hlsearch                     " Highlight search results
 set ignorecase                   " Ignore case while searching
-set gdefault                     " Always do search and replace globally
 " prepend all searches with \v to get rid of vim's 'crazy default regex characters'
 nnoremap / /\v
-" make tab % in normal mode. This allows us to jump between brackets.
-nnoremap <tab> %
-" make tab % in visual mode. this allows us to jump between brackets.
-vnoremap <tab> %
 
 "short cuts for common split commands.
 nnoremap <silent> ss :split .
@@ -97,7 +92,6 @@ autocmd BufReadPost *
 """"""""""""""
 "Code Folding"
 """"""""""""""
-set foldmethod=indent
 set foldlevel=999
 
 autocmd BufWinLeave *.* mkview
