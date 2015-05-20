@@ -57,7 +57,19 @@ vnoremap <tab> %
 "short cuts for common split commands.
 nnoremap <silent> ss :split .
 nnoremap <silent> vv :vsplit .
-nnoremap <silent> `` :%s/^\s*/&&
+
+" Cleanup functions
+function! RemoveTrailingWhiteSpace()
+    if !&binary && &filetype != 'diff'
+        normal mz
+        normal Hmy
+        :%s/\s\+$//e
+        normal yz<CR>
+        normal `z
+    endif
+endfunction
+
+nnoremap <leader>s :call RemoveTrailingWhiteSpace()<CR>
 
 " ---------------------------------------------------------------------------
 " Python Stuff
