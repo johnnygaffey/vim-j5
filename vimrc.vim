@@ -1,6 +1,7 @@
 scriptencoding utf-8
 set encoding=utf-8
 
+let mapleader = ","
 syntax enable                    " Turn on Syntax highlighting
 
 " auto indenting
@@ -74,7 +75,6 @@ autocmd FileType python set softtabstop=4            " For python, tabs are four
 autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class " Autoindent my new blocks in python
 highlight SpellBad term=reverse ctermbg=1
 
-let mapleader = ","
 map <leader>m oimport ipdb; ipdb.set_trace()
 
 " ---------------------------------------------------------------------------
