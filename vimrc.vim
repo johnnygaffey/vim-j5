@@ -64,7 +64,7 @@ function! RemoveTrailingWhiteSpace()
     endif
 endfunction
 
-nnoremap <leader>s :call RemoveTrailingWhiteSpace()<CR>
+noremap <leader>s :call RemoveTrailingWhiteSpace()<CR>
 
 " ---------------------------------------------------------------------------
 " Python Stuff
