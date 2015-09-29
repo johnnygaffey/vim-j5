@@ -92,10 +92,10 @@ autocmd BufReadPost *
 """"""""""""""
 "Code Folding"
 """"""""""""""
-set foldlevel=999
-
-autocmd BufWinLeave *.* mkview
-autocmd BufWinEnter *.* silent loadview
+set foldmethod=indent
+"set foldlevel=999
+set foldlevel=20
+set foldlevelstart=20
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " COLOR SCHEME
