@@ -123,15 +123,15 @@ set laststatus=2       " Always show status line
 set showmode           " Show the current mode
 
 " Backup/Undo settings
-execute "set directory=" . g:vim_home_path . "/swap"
-execute "set backupdir=" . g:vim_home_path . "/backup"
+execute "set directory=~/.vim/swap"
+execute "set backupdir=~/.vim/backup"
 set backup
 set writebackup
 
 
 if exists('+colorcolumn')
   set colorcolumn=81
-  execute "set undodir=" . g:vim_home_path . "/undo"
+  execute "set undodir=~/.vim/undo"
   set undofile
   set undoreload=10000
 endif
