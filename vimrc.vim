@@ -147,6 +147,11 @@ autocmd BufWinLeave * call clearmatches()
 "------------------------------------------------
 "" Plugin settings
 "------------------------------------------------
+"
+
+let g:jedi#completions_enabled = 0
+let g:jedi#smart_auto_mappings = 0
+
 
 " SuperTab settings
 let g:SuperTabDefaultCompletionType = "context"
@@ -164,18 +169,6 @@ let g:indent_guides_guide_size = 1
 
 let g:NERDTreeDirArrows=0
 
-if has('python')
-python << EOF
-import os.path
-import sys
-import vim
-if 'VIRTUAL_ENV' in os.environ:
-    project_base_dir = os.environ['VIRTUAL_ENV']
-    sys.path.insert(0, project_base_dir)
-    activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
-    execfile(activate_this, dict(__file__=activate_this))
-EOF
-endif
 
 " Line number settings
 set relativenumber     " Start with relative numbers
