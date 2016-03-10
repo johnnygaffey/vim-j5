@@ -7,7 +7,7 @@ syntax enable                    " Turn on Syntax highlighting
 " auto indenting
 set et
 set sw=4                         " shift width is four
-set softtabstop=4                " four here. 
+set softtabstop=4                " four here.
 set expandtab                    " all tabs are actually spaces
 set smartindent                  " FOR NOW....
 
